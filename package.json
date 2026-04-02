@@ -1,12 +1,13 @@
 {
-  "name": "ecommerce-pwa",
+  "name": "utilitylab",
   "private": true,
   "version": "1.0.0",
   "description": "Modern React PWA E-commerce App with Stripe Integration",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc --noEmit && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
@@ -17,8 +18,8 @@
     "react-dom": "^19.2.4",
     "react-router-dom": "^6.21.0",
     "zustand": "^4.4.4",
-    "@stripe/react-stripe-js": "^2.4.0",
-    "@stripe/stripe-js": "^2.1.0",
+    "@stripe/react-stripe-js": "^3.0.0",
+    "@stripe/stripe-js": "^4.0.0",
     "axios": "^1.6.2"
   },
   "devDependencies": {
@@ -26,15 +27,15 @@
     "@types/node": "^24.12.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "@vitejs/plugin-pwa": "^0.18.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.0",
-    "vite": "^8.0.1",
+    "vite": "^5.0.4",
+    "vite-plugin-pwa": "^0.17.4",
     "prettier": "^3.0.3",
     "workbox-window": "^7.0.0"
   }
