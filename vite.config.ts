@@ -4,13 +4,14 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     VitePWA({
       manifest: {
-        name: 'ECommerce PWA',
-        short_name: 'Shop',
-        description: 'Modern e-commerce PWA with Stripe integration',
+        name: 'UtilityLab - custom prints to improve your life',
+        short_name: 'UtilityLab',
+        description: 'Custom prints. Modern solutions.',
         theme_color: '#000000',
         background_color: '#ffffff',
         display: 'standalone',
